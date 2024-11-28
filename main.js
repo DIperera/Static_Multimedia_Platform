@@ -3,7 +3,7 @@ const moviecontainer = document.getElementById("moviecontainer");
 movie.addEventListener("change", function() {
 if(movie.value === "2"){
     moviecontainer.innerHTML = `
-            <h2 class="heading">Horror Movies apears below : </h2>
+            <h2 class="heading">Horror Movies appears below : </h2>
             <div id = "horrorcontainer">
                 <div class="horror" id="h1">
                     <label>Name : The Conjuring </label><br>
@@ -54,7 +54,7 @@ if(movie.value === "2"){
             </div>`;
 }else if(movie.value === "3"){
     moviecontainer.innerHTML = `
-                <h2 class="heading">Mystery Movies apears below : </h2>
+                <h2 class="heading">Mystery Movies appears below : </h2>
                 <div id = "mysterycontainer">
                     <div class="mystery" id="m1">
                         <label>Name : Smile </label><br>

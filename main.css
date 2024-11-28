@@ -1,6 +1,6 @@
 *{
-    font-family: cursive;
     margin: 0;
+    font-size: 1.04em;
 }
 .navbar{
     display: flex;
@@ -21,7 +21,7 @@
     font-size: 1.5em;
 }
 .container{
-    background-color: rgb(92, 92, 186);   
+    background-color: darkblue;   
     border: 3px solid #06dffc;
     padding: 0;
     
@@ -41,65 +41,74 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.648);
+    color: lightblue;
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(92, 92, 186);
+    border: 10px solid darkblue;
 }
 
 .con1:hover{
-    box-shadow: 0px 0px 100px rgb(92, 92, 186);
+    border: 10px solid rgb(1, 1, 194);
 }
 #horrorcontainer, #mysterycontainer{
     display: flex;
     padding-top: 20px;
     overflow: scroll;
+    scrollbar-width: none;
 
 }
 .horror, .mystery{
-    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.648);
     border-radius: 10px;
+    color: lightblue;
     padding: 15px;
     width: 380px;
     margin-left: 20px;
-    box-shadow: 0px 0px 10px rgb(92, 92, 186);
+    box-shadow: 0px 0px 10px darkblue;
+    border: 4px solid darkblue;
 }
 iframe{
     padding: 15px;
     width: 350px;
-    box-shadow: 0px 0px 10px rgb(92, 92, 186);
+    background-color: darkblue;
+    box-shadow: 0px 0px 10px rgb(29, 29, 112);
 }
-iframe:hover{
-    box-shadow: 0px 0px 50px rgb(92, 92, 186);
-}
+
 body{
-    background-image: url("images/background.jpg");
-    background-size: cover;
+    background-color: black;
 }
 h2{
-    color: red;
+    color: aqua;
+    padding: 20px;
+    padding-top: 40px;
     text-shadow: 1px 1px 5px rgb(101, 29, 29);
+    font-size: 1.2em;
 }
 #titles{
-    width: 100px;
+    width: 120px;
     height: 30px;
+    color: lightblue;
+    background-color: darkblue;
 }
 @media screen and (max-width: 600px){
     .horror, .mystery{
-        background-color: aqua;
+        background-color: rgba(0, 0, 0, 0.648);
+        color: lightblue;
         border-radius: 10px;
         padding: 15px;
         width: 280px;
         margin-left: 20px;
-        box-shadow: 0px 0px 10px rgb(92, 92, 186);
+        box-shadow: 0px 0px 10px darkblue;
+        border: 4px solid darkblue;
     }
     iframe{
         padding: 15px;
-        width: 250px;
-        box-shadow: 0px 0px 10px rgb(92, 92, 186);
+        background-color: darkblue;
+        width: 250px;    
     }
 }
