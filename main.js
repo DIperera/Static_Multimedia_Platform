@@ -1,6 +1,11 @@
 const movie = document.getElementById("titles");
 const moviecontainer = document.getElementById("moviecontainer");
 movie.addEventListener("change", function() {
+    
+    moviecontainer.classList.remove("expanded");
+    setTimeout(() => {
+    moviecontainer.innerHTML = "";
+
 if(movie.value === "2"){
     moviecontainer.innerHTML = `
             <h2 class="heading">Horror Movies appears below : </h2>
@@ -104,9 +109,10 @@ if(movie.value === "2"){
 
                 </div>`;
 }
-else{
-    moviecontainer.innerHTML = ``;
-}
+
+moviecontainer.classList.add("expanded");
+}, 600);
+
 });
 
 /*const horror = document.getElementById("horror").innerHTML;
