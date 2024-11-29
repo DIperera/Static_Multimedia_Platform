@@ -1,0 +1,105 @@
+
+.maincon{
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont1{
+    display: inline-block;
+    height: 450px;
+    width: 300px;  
+    margin-left: auto; 
+    margin-right: auto;
+    width: 30%;
+    
+}
+
+.cont1 img{
+    position: relative;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: auto;
+    width: 90%;
+}
+
+.cont2{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 300px;  
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 10px;
+    width: 55%;
+}
+.btn{
+    position: relative;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+    border-radius: 30px;
+    padding: 10px;
+    border: 3px solid aqua;
+}
+
+
+.p1{
+    font-size: 2em; 
+    padding: 10px;
+    color: lightblue;
+}
+.p2{
+    font-size: 1.5em; 
+    padding: 10px;
+    color: lightblue;
+
+}
+
+@media screen and (max-width : 600px) {
+    .cont1, .cont2{ width: 90%;}
+
+}
+
+.listitems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Spacing between the divs */
+}
+
+.listitems div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    border-radius: 8px; 
+    background-color: darkblue; 
+}
+
+.listitems label {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: lightblue;
+    padding-bottom: 20px;
+}
+
+.listitems img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px; 
+}
+
+@media screen and (max-width: 600px) {
+    .listitems div {
+        width: 35% ; /* 2 divs per row */
+        transform: translateY(200px);
+    }
+}

@@ -115,6 +115,10 @@ moviecontainer.classList.add("expanded");
 
 });
 
+function page() {
+    window.location.href = "movie.html";
+}
+
 /*const horror = document.getElementById("horror").innerHTML;
 const horrormovies = `<h3 style="color:red">Latest horror movies...</h3><br>`+ horror;//here only ` can be used*/
 
