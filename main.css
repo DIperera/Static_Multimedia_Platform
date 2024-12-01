@@ -1,7 +1,5 @@
 *{
     margin: 0;
-    font-size: 1.04em;
-   
 }
 .navbar{
     display: flex;
@@ -186,6 +184,3 @@ h2{
     .cont1, .cont2{ width: 90%;}
 
 }
-
-
-

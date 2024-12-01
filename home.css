@@ -1,7 +1,6 @@
-
 .maincon{
     height: 500px;
-    padding: 20px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -33,7 +32,8 @@
     width: 300px;  
     margin-left: auto; 
     margin-right: auto;
-    padding: 10px;
+    margin-bottom: auto;
+    padding-top: 5%;
     width: 55%;
 }
 button{
@@ -54,12 +54,21 @@ button{
     padding: 10px;
     color: lightblue;
 }
-.p2{
-    font-size: 1.5em; 
-    padding: 10px;
-    color: lightblue;
-
+@media screen and (min-width : 500px){
+    .p2{
+        font-size: clamp(1.2em, 3vw, 1.5em);
+        padding: 10px;
+        color: lightblue;
+    
+    }
 }
+@media screen and (max-width : 500px){
+    .p2{
+        font-size: clamp(1.1em, 5vw, 1.5em); /*changed*/
+        padding-bottom: 0;
+    }
+}
+
 
 @media screen and (max-width : 600px) {
     .cont1, .cont2{ width: 90%;}
@@ -70,7 +79,8 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; /* Spacing between the divs */
+    gap: 20px; /* Spacing between the divs */
+
 }
 
 .listitems div {
@@ -102,7 +112,13 @@ button{
 @media screen and (max-width: 600px) {
     .listitems div {
         width: 35% ; /* 2 divs per row */
-        transform: translateY(200px);
+        
+    }
+    .listitems label{
+        font-size: clamp(1.2em, 3vw, 1.5em);
+    }
+    .listitems img{
+        width: 30vW;
     }
 }
 
@@ -120,4 +136,6 @@ button{
   body.blur .item:not(.active) {
     filter: blur(5px);
   } 
-
+.cont2 button{
+    margin-bottom: 10px;
+}
