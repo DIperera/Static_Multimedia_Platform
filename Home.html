@@ -34,39 +34,83 @@
             <button class="btn" onclick="page()">Get Started</button>
         </div>
         <div class="listitems">
-            <div class="item" data-value="1">
+            <div class="item" data-value="1" bvalue="1">
                 <label for="img1">The Nun</label>
                 <img id="img1" src="images/nun.jpg" alt="The Nun">
                 <button onclick="centerDiv(this)">Watch Now</button>
+                <button id="bb1" onclick="bookmark(this)">Bookmark</button>
             </div>
-            <div class="item" data-value="2">
+            <div class="item" data-value="2" bvalue="2">
                 <label for="img2">The Nun 2</label>
                 <img id="img2" src="images/nun.jpg" alt="The Nun">
                 <button onclick="centerDiv(this)">Watch Now</button>
+                <button id="bb2" onclick="bookmark(this)">Bookmark</button>
             </div>
-            <div class="item" data-value="3">
+            <div class="item" data-value="3" bvalue="3">
                 <label for="img3">The Conjuring</label>
                 <img id="img3" src="images/nun.jpg" alt="The Nun">
                 <button onclick="centerDiv(this)">Watch Now</button>
+                <button id="bb3" onclick="bookmark(this)">Bookmark</button>
             </div>
-            <div class="item" data-value="4">
+            <div class="item" data-value="4" bvalue="4">
                 <label for="img4">The conjuring 2</label>
                 <img id="img4" src="images/nun.jpg" alt="The Nun">
                 <button onclick="centerDiv(this)">Watch Now</button>
+                <button id="bb4" onclick="bookmark(this)">Bookmark</button>
             </div>
-            <div class="item" data-value="5">
+            <div class="item" data-value="5" bvalue="5">
                 <label for="img5">The Sinister</label>
                 <img id="img5" src="images/nun.jpg" alt="The Nun">
                 <button onclick="centerDiv(this)">Watch Now</button>
+                <button id="bb5" onclick="bookmark(this)">Bookmark</button>
             </div>
-            <div class="item" data-value="6">
+            <div class="item" data-value="6" bvalue="6">
                 <label for="img6">Smile</label>
                 <img id="img6" src="images/nun.jpg" alt="The Nun">
                 <button onclick="centerDiv(this)">Watch Now</button>
+                <button id="bb6" onclick="bookmark(this)">Bookmark</button>
             </div>
         </div>
         
-        
+        <div class="listitems2" id="bcontainer">
+
+            <div class="item" data-value="1" id="11" rvalue="1" style="display: none;">
+                <label for="img1">The Nun</label>
+                <img id="img1" src="images/nun.jpg" alt="The Nun">
+                <button onclick="centerDiv(this)">Watch Now</button>
+                <button onclick="remove(this)">Remove</button>
+            </div>
+            <div class="item" data-value="2" id="22" rvalue="2" style="display: none;">
+                <label for="img2">The Nun 2</label>
+                <img id="img2" src="images/nun.jpg" alt="The Nun">
+                <button onclick="centerDiv(this)">Watch Now</button>
+                <button onclick="remove(this)">Remove</button>
+            </div>
+            <div class="item" data-value="3" id="33" rvalue="3" style="display: none;">
+                <label for="img3">The Conjuring</label>
+                <img id="img3" src="images/nun.jpg" alt="The Nun">
+                <button onclick="centerDiv(this)">Watch Now</button>
+                <button onclick="remove(this)">Remove</button>
+            </div>
+            <div class="item" data-value="4" id="44" rvalue="4" style="display: none;">
+                <label for="img4">The conjuring 2</label>
+                <img id="img4" src="images/nun.jpg" alt="The Nun">
+                <button onclick="centerDiv(this)">Watch Now</button>
+                <button onclick="remove(this)">Remove</button>
+            </div>
+            <div class="item" data-value="5" id="55" rvalue="5" style="display: none;">
+                <label for="img5">The Sinister</label>
+                <img id="img5" src="images/nun.jpg" alt="The Nun">
+                <button onclick="centerDiv(this)">Watch Now</button>
+                <button onclick="remove(this)">Remove</button>
+            </div>
+            <div class="item" data-value="6" id="66" rvalue="6"  style="display: none;">
+                <label for="img6">Smile</label>
+                <img id="img6" src="images/nun.jpg" alt="The Nun">
+                <button onclick="centerDiv(this)">Watch Now</button>
+                <button onclick="remove(this)">Remove</button>
+            </div>
+        </div>
     </div>
     
     <script src='main.js'></script>

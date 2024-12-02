@@ -195,6 +195,75 @@ function centerDiv(button) {
 function skip(){
     location.reload();
 }
-/*const horror = document.getElementById("horror").innerHTML;
-const horrormovies = `<h3 style="color:red">Latest horror movies...</h3><br>`+ horror;//here only ` can be used*/
+
+function bookmark(button) {
+    
+    const div1 = button.parentElement;
+    const bvalue = div1.getAttribute("bvalue");
+    
+    if(bvalue === "1"){
+            alert("The Nun has been bookmarked!");
+            button.style.display = "none";
+            document.getElementById("11").style.display = "flex";
+    }else if(bvalue === "2"){    
+            alert("The Nun 2 has been bookmarked!");
+            button.style.display = "none";
+            document.getElementById("22").style.display = "flex";
+    }else if(bvalue === "3"){
+            alert("The Conjuring has been bookmarked!");
+            button.style.display = "none";
+            document.getElementById("33").style.display = "flex";
+    }else if(bvalue === "4"){
+            alert("The Conjuring 2 has been bookmarked!");
+            button.style.display = "none";
+            document.getElementById("44").style.display = "flex";
+    }else if(bvalue === "5"){
+            alert("The Sinister has been bookmarked!");
+            button.style.display = "none";
+            document.getElementById("55").style.display = "flex";
+    }else if(bvalue === "6"){
+            alert("Smile has been bookmarked!");
+            button.style.display = "none";
+            document.getElementById("66").style.display = "flex";
+    }else{      
+            alert("Invalid movie selection or no value found.");
+    }
+
+}
+
+function remove(button) {
+
+    const div1 = button.parentElement;
+    const rvalue = div1.getAttribute("rvalue");
+    
+    if(rvalue === "1"){
+            alert("The Nun has been removed from bookmarks!");
+            document.getElementById("11").style.display = "none";
+            document.getElementById("bb1").style.display = "block";
+    }else if(rvalue === "2"){    
+            alert("The Nun 2 has been removed from bookmarks!");
+            document.getElementById("22").style.display = "none";
+            document.getElementById("bb2").style.display = "block";
+    }else if(rvalue === "3"){
+            alert("The Conjuring has been removed from bookmarks!");
+            document.getElementById("33").style.display = "none";
+            document.getElementById("bb3").style.display = "block";
+    }else if(rvalue === "4"){
+            alert("The Conjuring 2 has been removed from bookmarks!");
+            document.getElementById("44").style.display = "none";
+            document.getElementById("bb4").style.display = "block";
+    }else if(rvalue === "5"){
+            alert("The Sinister has been removed from bookmarks!");
+            document.getElementById("55").style.display = "none";
+            document.getElementById("bb5").style.display = "block";
+    }else if(rvalue === "6"){
+            alert("Smile has been removed from bookmarks!");
+            document.getElementById("66").style.display = "none";
+            document.getElementById("bb6").style.display = "block";
+    }else{      
+            alert("Invalid movie selection or no value found.");
+    }
+
+}
+
 

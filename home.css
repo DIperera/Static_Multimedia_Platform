@@ -75,7 +75,7 @@ button{
 
 }
 
-.listitems {
+.listitems, .listitems2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -83,18 +83,18 @@ button{
 
 }
 
-.listitems div {
+.listitems div, .listitems2 div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%; 
+    width: 300px; /*earlier there were width: 25%. because of that i had to change every thing according to the screen size. but after adding this in pixels when reduse the screen size the count of div elements are changing according to the screen size*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     padding: 10px;
     border-radius: 8px; 
     background-color: darkblue; 
 }
 
-.listitems label {
+.listitems label, .listitems2 label {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
@@ -102,7 +102,7 @@ button{
     padding-bottom: 20px;
 }
 
-.listitems img {
+.listitems img, .listitems2 img{
     width: 150px;
     height: auto;
     border-radius: 5px;
@@ -110,15 +110,15 @@ button{
 }
 
 @media screen and (max-width: 600px) {
-    .listitems div {
-        width: 35% ; /* 2 divs per row */
+    .listitems div, .listitems2 div {
+        max-width: 100px;/* changes this also -->width: 35% ; /* 2 divs per row */
         
     }
-    .listitems label{
+    .listitems label, .listitems2 label {
         font-size: clamp(1.2em, 3vw, 1.5em);
     }
-    .listitems img{
-        width: 30vW;
+    .listitems img, .listitems2 img{
+        width: 80px; /*width: 60vw; changed this also*/
     }
 }
 
@@ -138,4 +138,8 @@ button{
   } 
 .cont2 button{
     margin-bottom: 10px;
+}
+
+.listitems2{
+    padding: clamp(10px, 3vw, 160px);
 }
