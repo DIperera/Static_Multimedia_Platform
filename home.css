@@ -1,4 +1,4 @@
-.maincon{
+.maincon, .maincon2{
     height: 500px;
     padding: 0;
     display: flex;
@@ -74,6 +74,12 @@ button{
     .cont1, .cont2{ width: 90%;}
 
 }
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
 .listitems, .listitems2 {
     display: flex;
@@ -141,5 +147,28 @@ button{
 }
 
 .listitems2{
-    padding: clamp(10px, 3vw, 160px);
+    padding: clamp(10px, 9vw, 160px);
+}
+@media screen and (max-width: 600px) {
+    .listitems2{
+        padding: clamp(10px, 9vw, 160px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bookh{
+        padding-bottom: 30px;
+    }
+}
+.bookh{
+    max-width: fit-content;
+    color: lightblue;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    
+}
+
+#btitle{
+    color: lightblue;
 }

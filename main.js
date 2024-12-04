@@ -266,4 +266,23 @@ function remove(button) {
 
 }
 
+function bmove1() {
+    window.scrollTo({ top: 1500, behavior: 'smooth' });
+}
+function bmove2(){
+    window.location.href = "Home.html";
+    alert("Click on bookmark again !");
+}
+
+
+function bmovem1(){
+window.scrollTo({ top: 2200, behavior: 'smooth' });
+}
+
+function bmovem2(){
+window.location.href = "Home.html";
+alert("Click on bookmark again !");
+
+}
+
 

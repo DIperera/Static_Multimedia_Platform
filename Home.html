@@ -15,24 +15,25 @@
             <li><a href>MTUBE</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="movie.html">Movies</a></li>
-            <li><a href>Cartoons</a></li>
-            <li><a href>Library</a></li>
+            
+            <li><a href="#" onclick="bmove1()">Library</a></li>
         </ul>
         <ul class="navbar" id="nav2">
             <li><a href>MTUBE</a></li>
             <li><a href="#"><i class="bi bi-house-door-fill"></i></a></li>
             <li><a href="movie.html"><i class="bi bi-camera-reels-fill"></i></a></li>
-            <li><a href><i class="bi bi-film"></i></a></li>
-            <li><a href><i class="bi bi-bookmark-check-fill"></i></a></li>
+            
+            <li><a href="#" onclick="bmovem1()"><i class="bi bi-bookmark-check-fill"></i></a></li>
         </ul>
     </div>
     <div class="maincon">
         <div class="cont1"><img src="images/nun.jpg" alt="nun_image"></div>
         <div class="cont2">
             <p class="p1">Welcome to MTUBE !</h1>
-            <p class="p2">Discover a world of cinematic magic at CineWorld, your one-stop shop for the latest blockbusters, timeless classics, and hidden gems. Whether you're a fan of thrilling action, heartwarming dramas, or laugh-out-loud comedies, we’ve got something for every movie lover. Browse, rent, or buy with ease, and enjoy exclusive deals and recommendations tailored just for you. Let the show begin!</p><br>
+            <p class="p2">"Welcome to MTube, your ultimate destination for spine-chilling horror and mind-bending mystery movies. From classic horrors to modern-day thrillers, we've curated the best collection to satisfy your craving for fear and intrigue. Watch, discover, and explore the best movie collection arround the world. MTube is here to ensure your nights are filled with memorable scares and twists!"</p><br>
             <button class="btn" onclick="page()">Get Started</button>
         </div>
+        <div class="main">
         <div class="listitems">
             <div class="item" data-value="1" bvalue="1">
                 <label for="img1">The Nun</label>
@@ -71,6 +72,10 @@
                 <button id="bb6" onclick="bookmark(this)">Bookmark</button>
             </div>
         </div>
+        <h1 class="bookh">Bookmarks</h1>
+    </div>
+
+    <div class="maincon2">  
         
         <div class="listitems2" id="bcontainer">
 
@@ -112,7 +117,7 @@
             </div>
         </div>
     </div>
-    
+</div>
     <script src='main.js'></script>
 </body>
 </html>
