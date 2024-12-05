@@ -1,4 +1,4 @@
-# MTUBE 🎬
+<h1 align="center"> MTUBE 🎬 </h1>
 
 MTUBE is a mobile-responsive website built using HTML, CSS, and JavaScript. The website provides users with the ability to:
 
@@ -45,4 +45,4 @@ I am proud to say that I am the **sole contributor** to this project. All the de
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/DIperera/MTUBE.git
+   git clone https://github.com/DIperera/Static_Multimedia_Platform.git
