@@ -127,7 +127,7 @@ function centerDiv(button) {
 
     if (value === "1") {
         div.innerHTML = `
-            <iframe 
+            <iframe style="width:90vw; height:50vh;"
                 src="https://www.youtube.com/embed/pzD9zGcUNrw?si=mDyx5hfKFeejFm9I" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -137,7 +137,7 @@ function centerDiv(button) {
             </iframe><br><button onclick="skip()">Back</button>`;
     } else if (value === "2") {
         div.innerHTML = `
-            <iframe 
+            <iframe style="width:90vw; height:50vh;"
                 src="https://www.youtube.com/embed/aM9OvISC1Dg?si=aoGPQNSh-ZUmrbm-" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -147,7 +147,7 @@ function centerDiv(button) {
             </iframe><br><button onclick="skip()">Back</button>`;
     } else if (value === "3") {
         div.innerHTML = `
-            <iframe 
+            <iframe style="width:90vw; height:50vh;"
                 src="https://www.youtube.com/embed/ejMMn0t58Lc?si=UZkchKg9bT1P2kgY" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -157,7 +157,7 @@ function centerDiv(button) {
             </iframe><br><button onclick="skip()">Back</button>`;
     } else if (value === "4") {
         div.innerHTML = `
-            <iframe 
+            <iframe style="width:90vw; height:50vh;"
                 src="https://www.youtube.com/embed/VFsmuRPClr4?si=mptIW_kM8uyXrGjg" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -167,7 +167,7 @@ function centerDiv(button) {
             </iframe><br><button onclick="skip()">Back</button>`;
     } else if (value === "5") {
         div.innerHTML = `
-            <iframe 
+            <iframe style="width:90vw; height:50vh;"
                 src="https://www.youtube.com/embed/fChx_YZUAR0?si=J-ZMZdaTI9MRIMnb" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -177,7 +177,7 @@ function centerDiv(button) {
             </iframe><br><button onclick="skip()">Back</button>`;
     } else if (value === "6") {
         div.innerHTML = `
-            <iframe 
+            <iframe style="width:90vw; height:50vh;"
                 src="https://www.youtube.com/embed/BcDK7lkzzsU?si=-nB6w_2wbcOhZjVk" 
                 title="YouTube video player" 
                 frameborder="0" 

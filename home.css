@@ -79,13 +79,14 @@ button{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+
 }
 
 .listitems, .listitems2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Spacing between the divs */
+    gap: 3vw; /* Spacing between the divs */
 
 }
 
@@ -117,14 +118,15 @@ button{
 
 @media screen and (max-width: 600px) {
     .listitems div, .listitems2 div {
-        max-width: 100px;/* changes this also -->width: 35% ; /* 2 divs per row */
+        max-width: 130px;/* changes this also -->width: 35% ; /* 2 divs per row */
         
     }
     .listitems label, .listitems2 label {
-        font-size: clamp(1.2em, 3vw, 1.5em);
+        font-size: clamp(1.1em, 3vw, 1.5em);
+        letter-spacing: -1px;
     }
     .listitems img, .listitems2 img{
-        width: 80px; /*width: 60vw; changed this also*/
+        width: 125px; /*width: 60vw; changed this also*/
     }
 }
 
@@ -133,7 +135,7 @@ button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 1000;
     padding : 100%;
     background: transparent;
     backdrop-filter: blur(20px);
@@ -151,9 +153,13 @@ button{
 }
 @media screen and (max-width: 600px) {
     .listitems2{
-        padding: clamp(10px, 9vw, 160px);
-        margin-left: auto;
-        margin-right: auto;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;/*if transform: translateX(-7px); added here code will become a mess. instead we can add it to child element*/
+    }
+    .listitems2 div{
+        transform: translateX(-8px);
     }
     .bookh{
         padding-bottom: 30px;
